@@ -133,16 +133,3 @@ def p_external_client_sent_multi_messages(p):  # serveraddress socket
 def p_external_client_close(p):
     'CLOSEEXTERNALCLIENT : CREATESOCKET'
     p[1].close
-
-
-#Build
-parser = yacc.yacc()
-
-# while True:
-#     try:
-#         s = raw_input('PL > ')
-#     except EOFError:
-#         break
-#     if not s: continue
-#     result = parser.parse(s)
-#     print(result)

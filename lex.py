@@ -51,16 +51,3 @@ t_ignore = ' \t'
 def t_error(tk):
     print('Illegal Character')
     tk.lexer.skip(1)
-
-
-# Build lexer
-lexer = lex.lex()
-
-# lexer.input("while n <= 0 then h = 1")
-# # lexer.input("3 + 4 * 10 + -20 * 2")
-#
-# while True:
-#     tok = lexer.token()
-#     if not tok:
-#         break
-#     print(tok)
