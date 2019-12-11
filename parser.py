@@ -101,7 +101,6 @@ def p_external_server_receive_multi_messages(p):
         data = data.decode()
         print("Message from: " + str(addr))
         print("From connected user: " + data)
-        data = data.upper()
         print("Sending: " + data)
         p[1].sendto(data.encode(), addr)
 
