@@ -4,7 +4,12 @@ tokens = ['NUMBER', 'PLUS', 'MINUS', 'TIMES', 'DIVIDE', 'LP', 'RP', 'LB', 'RB', 
           'GREATEREQUAL']
 
 reserved = {
-    'if': 'IF', 'then': 'THEN', 'else': 'ELSE', 'while': 'WHILE'
+    'if': 'IF', 'then': 'THEN', 'else': 'ELSE', 'while': 'WHILE', 'createsockect': 'CREATESOCKET',
+    'bindsocket':'BINDSOCKET', 'receiverepeated':'RECEIVEREPEATED', 'connectlocalclient':'CONNECTLOCALCLIENT',
+    'repeatedmessages':'REPEATEDMESSAGES', 'finishlocalclient':'FINISHLOCALCLIENT',
+    'bindexternalserversocket':'BINDEXTERNALSERVERSOCKET', 'multtimesreceive':'MULTTIMESSAGESRECEIVE',
+    'closeexternalserver':'CLOSEEXTERNALSERVER', 'bindexternalclientsocket':'BINDEXTERNALCLIENTSOCKET',
+    'multtimesmessagessent':'MULTTIMESSAGESSENT', 'closeexternalclient':'CLOSEEXTERNALCLIENT'
 }
 
 tokens += list(reserved.values())
